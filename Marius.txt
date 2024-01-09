@@ -1,0 +1,2 @@
+user=Marius
+pass=123
