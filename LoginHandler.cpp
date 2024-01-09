@@ -1,7 +1,7 @@
 #include "LoginHandler.h"
 
 void LoginHandler::login(const string& username, const string& password) {
-    ifstream registeredUser(username + ".txt");
+    ifstream registeredUser("data/accounts/" + username + ".txt");
     if (registeredUser.is_open()) {
         string line;
         while (getline(registeredUser, line)) {
