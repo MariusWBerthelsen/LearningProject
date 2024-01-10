@@ -7,7 +7,9 @@ using namespace std;
 
 class LoginHandler {
 public:
-	string loginWindow();
+	void loginWindow();
+	bool isLoggedIn() const;
 private:
-	void login(const string& username, const string& password);
+	bool login(const string& username, const string& password);
+	bool loggedIn = false; // Add this line
 };
